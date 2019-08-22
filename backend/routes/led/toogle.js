@@ -2,7 +2,7 @@ const Gpio = require('onoff').Gpio
 const LED = new Gpio(4, 'out')
 
 module.exports = app => {
-    app.put('/toggleLed', function(req, res){
+    app.get('/toggleLed', function(req, res){
         console.log('Toogling led on GPIO4')
         if (LED.readSync() === 0) {
             console.log('Turning led on')

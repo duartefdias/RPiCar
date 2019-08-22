@@ -1,5 +1,5 @@
 const Gpio = require('pigpio').Gpio
-const servo = new Gpio(14, {mode: Gpio.OUTPUT})
+const servo = new Gpio(10, {mode: Gpio.OUTPUT})
 
 module.exports = app => {
     app.get('/servoTest', function(req, res){

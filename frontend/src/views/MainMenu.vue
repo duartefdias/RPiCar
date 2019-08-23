@@ -10,22 +10,18 @@
             <h2> Servo angle </h2>
         </v-row>
         <br>
-        <Servo1/>
-        <br>
-        <Servo2/>
+        <CameraServos/>
     </div>
 </template>
 
 <script>
-import Servo1 from '@/components/Servo1'
-import Servo2 from '@/components/Servo2'
+import CameraServos from '@/components/CameraServos'
 import SetIP from '@/components/SetIP'
 
 export default {
     name: 'MainMenu',
     components: {
-        Servo1,
-        Servo2,
+        CameraServos,
         SetIP
     },
     data() {

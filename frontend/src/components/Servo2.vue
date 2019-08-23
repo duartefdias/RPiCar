@@ -2,10 +2,12 @@
         <v-container>
             <v-row justify="center">
                 <v-col sm="3" md="2">
-                    <v-btn @click="tiltLeft()" class="fill">LEFT</v-btn>
+                    <v-btn @click="tiltLeft()" class="fill">UP</v-btn>
                 </v-col>
+            </v-row>
+            <v-row justify="center">
                 <v-col sm="3" md="2">
-                    <v-btn @click="tiltRight()" class="fill">RIGHT</v-btn>
+                    <v-btn @click="tiltLeft()" class="fill">DOWN</v-btn>
                 </v-col>
             </v-row>
         </v-container>

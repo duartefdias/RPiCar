@@ -16,7 +16,7 @@ import axios from 'axios'
 import Store from '@/store'
 
 export default {
-    name: "Servo1",
+    name: "Servo2",
     data() {
         return {
             currentAngle: 1500 // [600, 2400]
@@ -26,14 +26,14 @@ export default {
         async tiltLeft() {
             if(this.currentAngle > 600) {
                 this.currentAngle -= 100
-                let response = await axios.get('http://192.168.1.' + Store.getRPiLastIpDigit() + ':3000/servo1Angle/' + this.currentAngle)
+                let response = await axios.get('http://192.168.1.' + Store.getRPiLastIpDigit() + ':3000/servo2Angle/' + this.currentAngle)
                 console.log(response)
             }
         },
         async tiltRight() {
             if(this.currentAngle < 2400) {
                 this.currentAngle += 100
-                let response = await axios.get('http://192.168.1.' + Store.getRPiLastIpDigit() + ':3000/servo1Angle/' + this.currentAngle)
+                let response = await axios.get('http://192.168.1.' + Store.getRPiLastIpDigit() + ':3000/servo2Angle/' + this.currentAngle)
                 console.log(response)
             }
         }

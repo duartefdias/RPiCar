@@ -5,6 +5,6 @@ module.exports = app => {
     app.get('/servo1Angle/:servoAngle', function(req, res){
         console.log('Setting servo pwm to: ' + req.params.servoAngle)
         servo.servoWrite(req.params.servoAngle)
-        // res.send(req.params.servoAngle)
+        res.send(req.params.servoAngle)
     })
 }

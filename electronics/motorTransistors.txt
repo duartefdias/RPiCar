@@ -1,0 +1,3 @@
+NPN -> https://www.sparkfun.com/datasheets/Components/BC546.pdf
+
+PNP -> https://www.onsemi.com/pub/Collateral/BC556B-D.PDF
